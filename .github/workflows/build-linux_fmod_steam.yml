@@ -41,7 +41,7 @@ jobs:
         ./build-linux_fmod_steam.sh
         
     - name: Upload Game Build Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         # Artifact name
         name: Game_fmod_steam # optional
