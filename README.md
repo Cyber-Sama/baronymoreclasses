@@ -1,10 +1,6 @@
 ![Linux-CI_fmod_steam](https://github.com/TurningWheel/Barony/workflows/Linux-CI_fmod_steam/badge.svg) ![Linux-CI_fmod_steam_eos](https://github.com/TurningWheel/Barony/workflows/Linux-CI_fmod_steam_eos/badge.svg)
 
-NOTE: below is the original README from the official Barony repo.
-
-# Update - 3rd October 2023
-
-The current 'develop' branch contains in-development features for our latest update. For bugfixes + PRs, open them against 'master'.
+This is the source code for the Barony: More Classes mod. Compilation process should be identical to the original source code. Below is the original README from the official Barony repo.
 
 # Compilation Instructions
 
