@@ -50,7 +50,7 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP -= 10;
 
 		// skills
-		stat->setProficiency(PRO_SWIMMING, 25);
+		//stat->setProficiency(PRO_LEGACY_SWIMMING, 25);
 		stat->setProficiency(PRO_SHIELD, 25);
 		stat->setProficiency(PRO_AXE, 50);
 		stat->setProficiency(PRO_MACE, 25);
@@ -94,9 +94,11 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP += 10;
 
 		// skills
-		stat->setProficiency(PRO_SPELLCASTING, 50);
-		stat->setProficiency(PRO_MAGIC, 25);
-		stat->setProficiency(PRO_SWIMMING, 25);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 50);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 25);
+		//stat->setProficiency(PRO_LEGACY_SWIMMING, 25);
+		stat->setProficiency(PRO_THAUMATURGY, 50);
+		stat->setProficiency(PRO_MYSTICISM, 25);
 		stat->setProficiency(PRO_POLEARM, 25);
 		stat->setProficiency(PRO_ALCHEMY, 30);
 		stat->setProficiency(PRO_APPRAISAL, 10);
@@ -142,7 +144,7 @@ void initClassStats(const int classnum, void* myStats)
 
 		// skills
 		stat->setProficiency(PRO_STEALTH, 25);
-		stat->setProficiency(PRO_SWIMMING, 50);
+		//stat->setProficiency(PRO_LEGACY_SWIMMING, 50);
 		stat->setProficiency(PRO_POLEARM, 25);
 		stat->setProficiency(PRO_RANGED, 25);
 		stat->setProficiency(PRO_TRADING, 25);
@@ -160,9 +162,10 @@ void initClassStats(const int classnum, void* myStats)
 
 		// skills
 		stat->setProficiency(PRO_MACE, 25);
-		stat->setProficiency(PRO_SWIMMING, 25);
-		stat->setProficiency(PRO_MAGIC, 25);
-		stat->setProficiency(PRO_SPELLCASTING, 25);
+		//stat->setProficiency(PRO_LEGACY_SWIMMING, 25);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 25);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 25);
+		stat->setProficiency(PRO_THAUMATURGY, 40);
 		stat->setProficiency(PRO_LEADERSHIP, 20);
 		stat->setProficiency(PRO_ALCHEMY, 20);
 		stat->setProficiency(PRO_SHIELD, 10);
@@ -204,8 +207,10 @@ void initClassStats(const int classnum, void* myStats)
 
 		// skills
 		stat->setProficiency(PRO_POLEARM, 25);
-		stat->setProficiency(PRO_SPELLCASTING, 50);
-		stat->setProficiency(PRO_MAGIC, 50);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 50);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 50);
+		stat->setProficiency(PRO_SORCERY, 50);
+		stat->setProficiency(PRO_THAUMATURGY, 15);
 		stat->setProficiency(PRO_ALCHEMY, 10);
 		stat->setProficiency(PRO_APPRAISAL, 10);
 	}
@@ -226,8 +231,10 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP += 10;
 
 		// skills
-		stat->setProficiency(PRO_MAGIC, 25);
-		stat->setProficiency(PRO_SPELLCASTING, 50);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 25);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 50);
+		stat->setProficiency(PRO_SORCERY, 30);
+		//stat->setProficiency(PRO_MYSTICISM, 20);
 		stat->setProficiency(PRO_STEALTH, 25);
 		stat->setProficiency(PRO_LOCKPICKING, 25);
 		stat->setProficiency(PRO_RANGED, 25);
@@ -246,8 +253,10 @@ void initClassStats(const int classnum, void* myStats)
 		stat->setProficiency(PRO_LOCKPICKING, 25);
 		stat->setProficiency(PRO_TRADING, 25);
 		stat->setProficiency(PRO_LEADERSHIP, 20);
-		stat->setProficiency(PRO_MAGIC, 25);
-		stat->setProficiency(PRO_SPELLCASTING, 25);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 25);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 25);
+		stat->setProficiency(PRO_MYSTICISM, 25);
+		stat->setProficiency(PRO_SORCERY, 10);
 		stat->setProficiency(PRO_ALCHEMY, 10);
 		stat->setProficiency(PRO_RANGED, 20);
 		stat->setProficiency(PRO_STEALTH, 10);
@@ -268,8 +277,9 @@ void initClassStats(const int classnum, void* myStats)
 		stat->setProficiency(PRO_MACE, 10);
 		stat->setProficiency(PRO_SHIELD, 10);
 		stat->setProficiency(PRO_STEALTH, 40);
-		stat->setProficiency(PRO_SPELLCASTING, 40);
-		stat->setProficiency(PRO_MAGIC, 40);
+		stat->setProficiency(PRO_MYSTICISM, 40);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 40);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 40);
 		stat->setProficiency(PRO_RANGED, 20);
 		stat->setProficiency(PRO_ALCHEMY, 20);
 	}
@@ -285,6 +295,9 @@ void initClassStats(const int classnum, void* myStats)
 
 		stat->MAXHP += 5;
 		stat->HP += 5;
+
+		stat->MAXMP -= 10;
+		stat->MP -= 10;
 
 		// skills
 		stat->setProficiency(PRO_STEALTH, 60);
@@ -305,13 +318,152 @@ void initClassStats(const int classnum, void* myStats)
 
 		// skills
 		stat->setProficiency(PRO_SHIELD, 40);
-		stat->setProficiency(PRO_SPELLCASTING, 20);
 		stat->setProficiency(PRO_LEADERSHIP, 10);
-		stat->setProficiency(PRO_MAGIC, 10);
+		stat->setProficiency(PRO_THAUMATURGY, 25);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 10);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 20);
 		stat->setProficiency(PRO_UNARMED, 50);
 		stat->setProficiency(PRO_ALCHEMY, 20);
-		stat->setProficiency(PRO_SWIMMING, 10);
+		//stat->setProficiency(PRO_LEGACY_SWIMMING, 10);
 	}
+
+	// custom classes
+	else if (classnum == CLASS_ASCETIC)
+	{
+		// skills
+		stat->setProficiency(PRO_UNARMED, 10);
+		stat->setProficiency(PRO_SHIELD, 10);
+		stat->setProficiency(PRO_MACE, 10);
+		stat->setProficiency(PRO_AXE, 10);
+		stat->setProficiency(PRO_POLEARM, 10);
+		stat->setProficiency(PRO_SWORD, 10);
+		stat->setProficiency(PRO_RANGED, 10);
+		stat->setProficiency(PRO_STEALTH, 10);
+
+		stat->setProficiency(PRO_SORCERY, 10);
+		stat->setProficiency(PRO_MYSTICISM, 10);
+		stat->setProficiency(PRO_THAUMATURGY, 10);
+		stat->setProficiency(PRO_ALCHEMY, 10);
+		stat->setProficiency(PRO_LOCKPICKING, 10);
+		stat->setProficiency(PRO_APPRAISAL, 10);
+		stat->setProficiency(PRO_TRADING, 10);
+		stat->setProficiency(PRO_LEADERSHIP, 10);
+		}
+	else if (classnum == CLASS_BUCCANEER)
+	{
+		// attributes
+		stat->DEX += 1;
+		stat->INT -= 2;
+		stat->CHR -= 1;
+
+		stat->MAXMP -= 10;
+		stat->MP -= 10;
+
+		// skills
+		stat->setProficiency(PRO_SWORD, 40);
+		stat->setProficiency(PRO_SHIELD, 25);
+		stat->setProficiency(PRO_RANGED, 25);
+		stat->setProficiency(PRO_AXE, 25);
+		stat->setProficiency(PRO_STEALTH, 15);
+		stat->setProficiency(PRO_POLEARM, 10);
+		stat->setProficiency(PRO_UNARMED, 10);
+		}
+	else if (classnum == CLASS_BATTLEMAGE)
+	{
+		// attributes
+		stat->STR += 1;
+		stat->CON -= 1;
+		stat->INT += 1;
+		stat->PER -= 1;
+
+		stat->MAXMP += 10;
+		stat->MP += 10;
+
+		// skills
+		stat->setProficiency(PRO_SORCERY, 40);
+		stat->setProficiency(PRO_MACE, 40);
+		stat->setProficiency(PRO_SHIELD, 25);
+		stat->setProficiency(PRO_APPRAISAL, 10);
+		stat->setProficiency(PRO_LEADERSHIP, 10);
+		}
+	else if (classnum == CLASS_NECROKNIGHT)
+	{
+		// attributes
+		stat->STR += 1;
+		stat->CON -= 2;
+		stat->INT += 1;
+		stat->PER -= 1;
+
+		stat->MAXMP += 10;
+		stat->MP += 10;
+
+		// skills
+		stat->setProficiency(PRO_SWORD, 25);
+		stat->setProficiency(PRO_MYSTICISM, 25);
+		stat->setProficiency(PRO_LEADERSHIP, 25);
+		stat->setProficiency(PRO_APPRAISAL, 25);
+		stat->setProficiency(PRO_SORCERY, 20);
+		stat->setProficiency(PRO_SHIELD, 10);
+		}
+	else if (classnum == CLASS_PLAGUE_DOCTOR)
+	{
+		// attributes
+		stat->STR -= 2;
+		stat->DEX += 1;
+		stat->CON -= 1;
+		stat->PER += 1;
+
+		stat->MAXMP -= 10;
+		stat->MP -= 10;
+
+		// skills
+		stat->setProficiency(PRO_ALCHEMY, 60);
+		stat->setProficiency(PRO_POLEARM, 20);
+		stat->setProficiency(PRO_STEALTH, 10);
+		stat->setProficiency(PRO_LOCKPICKING, 10);
+		}
+	else if (classnum == CLASS_EXTERMINATOR)
+	{
+		// attributes
+		stat->STR -= 1;
+		stat->DEX += 1;
+		stat->CON -= 1;
+		stat->INT -= 1;
+		stat->PER += 2;
+		stat->CHR -= 1;
+
+		stat->MAXHP -= 5;
+		stat->HP -= 5;
+		stat->MAXMP -= 10;
+		stat->MP -= 10;
+
+		// skills
+		stat->setProficiency(PRO_RANGED, 40);
+		stat->setProficiency(PRO_LOCKPICKING, 25);
+		stat->setProficiency(PRO_STEALTH, 25);
+		stat->setProficiency(PRO_ALCHEMY, 10);
+		}
+	else if (classnum == CLASS_LOREMASTER)
+	{
+		// attributes
+		stat->STR -= 2;
+		stat->INT += 2;
+		stat->PER += 1;
+
+		stat->MAXHP -= 5;
+		stat->HP -= 5;
+		stat->MAXMP += 10;
+		stat->MP += 10;
+
+		// skills
+		stat->setProficiency(PRO_APPRAISAL, 60);
+		stat->setProficiency(PRO_MYSTICISM, 25);
+		stat->setProficiency(PRO_LEADERSHIP, 25);
+		stat->setProficiency(PRO_ALCHEMY, 25);
+		stat->setProficiency(PRO_MACE, 10);
+		stat->setProficiency(PRO_LOCKPICKING, 10);
+	}
+
 	// start DLC
 	else if ( classnum == CLASS_CONJURER )
 	{
@@ -327,8 +479,10 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP += 15;
 
 		// skills
-		stat->setProficiency(PRO_MAGIC, 40);
-		stat->setProficiency(PRO_SPELLCASTING, 40);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 40);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 40);
+		stat->setProficiency(PRO_MYSTICISM, 40);
+		stat->setProficiency(PRO_THAUMATURGY, 15);
 		stat->setProficiency(PRO_STEALTH, 20);
 		stat->setProficiency(PRO_RANGED, 20);
 		stat->setProficiency(PRO_LEADERSHIP, 40);
@@ -337,7 +491,7 @@ void initClassStats(const int classnum, void* myStats)
 	else if ( classnum == CLASS_ACCURSED )
 	{
 		// attributes
-		stat->INT += 10;
+		stat->INT += 5;
 		stat->STR -= 2;
 		stat->CON -= 2;
 		stat->DEX -= 3;
@@ -349,8 +503,10 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP += 10;
 
 		// skills
-		stat->setProficiency(PRO_MAGIC, 70);
-		stat->setProficiency(PRO_SPELLCASTING, 40);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 70);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 40);
+		stat->setProficiency(PRO_SORCERY, 60);
+		stat->setProficiency(PRO_MYSTICISM, 20);
 		stat->setProficiency(PRO_STEALTH, 40);
 		stat->setProficiency(PRO_APPRAISAL, 20);
 		stat->setProficiency(PRO_UNARMED, 40);
@@ -371,8 +527,10 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP += 10;
 
 		// skills
-		stat->setProficiency(PRO_MAGIC, 60);
-		stat->setProficiency(PRO_SPELLCASTING, 40);
+		stat->setProficiency(PRO_MYSTICISM, 60);
+		stat->setProficiency(PRO_SORCERY, 25);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 60);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 40);
 		stat->setProficiency(PRO_POLEARM, 20);
 		stat->setProficiency(PRO_LEADERSHIP, 60);
 	}
@@ -418,8 +576,9 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP += 10;
 
 		// skills
-		stat->setProficiency(PRO_SPELLCASTING, 40);
-		stat->setProficiency(PRO_MAGIC, 40);
+		stat->setProficiency(PRO_MYSTICISM, 40);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 40);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 40);
 		stat->setProficiency(PRO_UNARMED, 10);
 		stat->setProficiency(PRO_ALCHEMY, 10);
 		stat->setProficiency(PRO_STEALTH, 10);
@@ -443,8 +602,10 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP += 10;*/
 
 		// skills
-		stat->setProficiency(PRO_SPELLCASTING, 40);
-		stat->setProficiency(PRO_MAGIC, 20);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 40);
+		//stat->setProficiency(PRO_LEGACY_MAGIC, 20);
+		stat->setProficiency(PRO_SORCERY, 20);
+		stat->setProficiency(PRO_MYSTICISM, 20);
 		stat->setProficiency(PRO_RANGED, 25);
 		stat->setProficiency(PRO_AXE, 25);
 		/*stat->setProficiency(PRO_SHIELD, 40);
@@ -468,10 +629,10 @@ void initClassStats(const int classnum, void* myStats)
 		stat->MP -= 10;
 
 		// skills
-		stat->setProficiency(PRO_SPELLCASTING, 10);
+		//stat->setProficiency(PRO_LEGACY_SPELLCASTING, 10);
 		stat->setProficiency(PRO_APPRAISAL, 20);
 		stat->setProficiency(PRO_STEALTH, 25);
-		stat->setProficiency(PRO_SWIMMING, 50);
+		//stat->setProficiency(PRO_LEGACY_SWIMMING, 50);
 		stat->setProficiency(PRO_RANGED, 50);
 		stat->setProficiency(PRO_LOCKPICKING, 10);
 	}
@@ -495,6 +656,118 @@ void initClassStats(const int classnum, void* myStats)
 		stat->setProficiency(PRO_RANGED, 10);
 		stat->setProficiency(PRO_ALCHEMY, 10);
 		stat->setProficiency(PRO_TRADING, 10);
+	}
+	else if ( classnum == CLASS_BARD )
+	{
+		stat->STR += -2;
+		stat->DEX += 1;
+		stat->CON += -2;
+		stat->INT += 0;
+		stat->PER += 0;
+		stat->CHR += 3;
+
+		stat->MAXHP -= 5;
+		stat->HP -= 5;
+
+		stat->MAXMP += 5;
+		stat->MP += 5;
+
+		stat->GOLD = 200;
+
+		stat->setProficiency(PRO_SWORD, 25);
+		stat->setProficiency(PRO_APPRAISAL, 50);
+		stat->setProficiency(PRO_MYSTICISM, 15);
+		stat->setProficiency(PRO_LEADERSHIP, 15);
+		stat->setProficiency(PRO_STEALTH, 15);
+		stat->setProficiency(PRO_TRADING, 15);
+	}
+	else if ( classnum == CLASS_SAPPER )
+	{
+		stat->STR += 1;
+		stat->DEX += 1;
+		stat->CON += -3;
+		stat->INT += -2;
+		stat->PER += 0;
+		stat->CHR += -3;
+
+		//stat->MAXHP += 5;
+		//stat->HP += 5;
+
+		stat->MAXMP -= 5;
+		stat->MP -= 5;
+
+		stat->setProficiency(PRO_MACE, 50);
+		stat->setProficiency(PRO_SORCERY, 15);
+		stat->setProficiency(PRO_RANGED, 15);
+		stat->setProficiency(PRO_STEALTH, 25);
+		stat->setProficiency(PRO_ALCHEMY, 25);
+	}
+	else if ( classnum == CLASS_SCION )
+	{
+		// attributes
+		stat->STR -= 2;
+		stat->INT += 3;
+		stat->PER += 1;
+		stat->DEX -= 2;
+		stat->CHR -= 1;
+
+		stat->MAXHP -= 10;
+		stat->HP -= 10;
+		stat->MAXMP += 20;
+		stat->MP += 20;
+		stat->GOLD = 250;
+
+		// skills
+		stat->setProficiency(PRO_SORCERY, 40);
+		stat->setProficiency(PRO_MYSTICISM, 40);
+		stat->setProficiency(PRO_THAUMATURGY, 40);
+		stat->setProficiency(PRO_ALCHEMY, 10);
+		stat->setProficiency(PRO_APPRAISAL, 10);
+	}
+	else if ( classnum == CLASS_HERMIT )
+	{
+		// attributes
+		stat->INT += 1;
+		stat->CON += 2;
+		stat->STR -= 2;
+		stat->DEX -= 2;
+		stat->CHR += 1;
+
+		//stat->MAXHP -= 10;
+		//stat->HP -= 10;
+		//stat->MAXMP += 20;
+		//stat->MP += 20;
+		//stat->GOLD = 250;
+
+		// skills
+		stat->setProficiency(PRO_MYSTICISM, 40);
+		stat->setProficiency(PRO_SORCERY, 15);
+		stat->setProficiency(PRO_MACE, 25);
+		stat->setProficiency(PRO_STEALTH, 25);
+		stat->setProficiency(PRO_ALCHEMY, 10);
+	}
+	else if ( classnum == CLASS_PALADIN )
+	{
+		// attributes
+		stat->CON += 0;
+		stat->STR += 1;
+		stat->DEX -= 1;
+		stat->INT += 1;
+		stat->PER -= 1;
+		stat->CHR += 1;
+
+		//stat->MAXHP -= 10;
+		//stat->HP -= 10;
+		stat->MAXMP -= 5;
+		stat->MP -= 5;
+		//stat->GOLD = 250;
+
+		// skills
+		stat->setProficiency(PRO_SWORD, 50);
+		stat->setProficiency(PRO_THAUMATURGY, 25);
+		stat->setProficiency(PRO_APPRAISAL, 25);
+		stat->setProficiency(PRO_SHIELD, 10);
+		stat->setProficiency(PRO_LEADERSHIP, 10);
 	}
 
 	if ( gameModeManager.currentSession.challengeRun.isActive() )
@@ -648,12 +921,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		if ( isLocalPlayer )
@@ -729,12 +1010,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// iron armor
@@ -805,12 +1094,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// healer doublet
@@ -938,12 +1235,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// gloves
@@ -1034,12 +1339,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// cloak
@@ -1275,12 +1588,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// leather breastpiece
@@ -1373,12 +1694,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// wizard doublet
@@ -1555,12 +1884,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		if ( isLocalPlayer )
@@ -1602,19 +1939,6 @@ void initClass(const int player)
 			}
 			free(item);
 
-			// spellbook of light
-			item = newItem(SPELLBOOK_LIGHT, WORN, 0, 1, 7, true, nullptr);
-			item2 = itemPickup(player, item);
-			if ( players[player]->hotbar.useHotbarFaceMenu )
-			{
-				hotbar[8].item = item2->uid;
-			}
-			else
-			{
-				hotbar[9].item = item2->uid;
-			}
-			free(item);
-
 			// scroll
 			item = newItem(SCROLL_CHARGING, EXCELLENT, 0, 2, 1, true, nullptr);
 			item2 = itemPickup(player, item);
@@ -1636,12 +1960,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		if ( isLocalPlayer )
@@ -1779,12 +2111,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		if ( isLocalPlayer )
@@ -1872,12 +2212,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// black mask
@@ -2036,6 +2384,888 @@ void initClass(const int player)
 			free(item);
 		}
 	}
+
+	// custom classes
+	else if (client_classes[player] == CLASS_ASCETIC)
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if (!isLocalPlayer && multiplayer == CLIENT && intro == false) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		// rocks
+		item = newItem(GEM_ROCK, WORN, 0, 3, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if (isLocalPlayer)
+		{
+			// torches
+			item = newItem(TOOL_TORCH, WORN, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[1].item = item2->uid;
+			free(item);
+		}
+		}
+	else if (client_classes[player] == CLASS_BUCCANEER)
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if (!isLocalPlayer && multiplayer == CLIENT && intro == false) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		// sword
+		item = newItem(IRON_SWORD, WORN, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[8].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// wooden shield
+		item = newItem(WOODEN_SHIELD, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[2].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// bandana
+		item = newItem(HAT_BANDANA, WORN, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		// eyepatch
+		item = newItem(MASK_EYEPATCH, WORN, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// leather gloves
+		item = newItem(GLOVES, WORN, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if (isLocalPlayer)
+		{
+			// crossbow
+			item = newItem(CROSSBOW, SERVICABLE, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[1].item = item2->uid;
+			free(item);
+
+			// lantern
+			item = newItem(TOOL_LANTERN, SERVICABLE, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[3].item = item2->uid;
+			free(item);
+
+			// ammo
+			item = newItem(QUIVER_FIRE, SERVICABLE, 0, 15, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// amulet
+			item = newItem(AMULET_WATERBREATHING, WORN, 0, 1, 5, true, nullptr);
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+
+			// fish
+			item = newItem(FOOD_FISH, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// cheese
+			item = newItem(FOOD_CHEESE, SERVICABLE, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// grog
+			item = newItem(POTION_BOOZE, WORN, 0, 2, 2, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+		}
+	else if (client_classes[player] == CLASS_BATTLEMAGE)
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if (!isLocalPlayer && multiplayer == CLIENT && intro == false) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		// bronze mace
+		item = newItem(BRONZE_MACE, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// shield
+		item = newItem(WOODEN_SHIELD, SERVICABLE, 0, 1, 1, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[1].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// purple hood
+		item = newItem(HAT_HOOD_APPRENTICE, SERVICABLE, 0, 1, 3, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		// purple cloak
+		item = newItem(CLOAK, SERVICABLE, 0, 1, 3, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// chest armor
+		item = newItem(LEATHER_BREASTPIECE, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// leather gloves
+		item = newItem(GLOVES, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// boots
+		item = newItem(LOAFERS, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if (isLocalPlayer)
+		{
+			// spellbook
+			item = newItem(SPELLBOOK_DISRUPT_EARTH, WORN, 0, 1, 6, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[7].item = item2->uid;
+			free(item);
+
+			// magicstaff of light
+			item = newItem(MAGICSTAFF_LIGHT, EXCELLENT, 0, 1, 3, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[1].item = item2->uid;
+			free(item);
+
+			// bread
+			item = newItem(FOOD_BREAD, SERVICABLE, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// restore magic
+			item = newItem(POTION_RESTOREMAGIC, EXCELLENT, 0, 1, 1, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[9].item = item2->uid;
+			free(item);
+		}
+		}
+	else if (client_classes[player] == CLASS_NECROKNIGHT)
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if (!isLocalPlayer && multiplayer == CLIENT && intro == false) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		// bone sword
+		item = newItem(BONE_SWORD, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// bone shield
+		item = newItem(BONE_SHIELD, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[1].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// circlet
+		item = newItem(HAT_CIRCLET, WORN, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		// cloak
+		item = newItem(CLOAK_SILVER, WORN, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// pauldrons
+		item = newItem(IRON_PAULDRONS, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// boots
+		item = newItem(SUEDE_BOOTS, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if (isLocalPlayer)
+		{
+			// restore magic
+			item = newItem(POTION_RESTOREMAGIC, EXCELLENT, 0, 1, 1, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[9].item = item2->uid;
+			free(item);
+		}
+		}
+	else if (client_classes[player] == CLASS_PLAGUE_DOCTOR)
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if (!isLocalPlayer && multiplayer == CLIENT && intro == false) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		// quarterstaff
+		item = newItem(QUARTERSTAFF, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// backpack
+		/* item = newItem(CLOAK_BACKPACK, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		} */
+
+		// plague hat
+		item = newItem(HAT_PLAGUE, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		// plague mask
+		item = newItem(MASK_PLAGUE, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			// unequips mask at spawn if playing as insectoid or myconid
+			if ( stats[player]->playerRace != RACE_INSECTOID && stats[player]->playerRace != RACE_MYCONID )
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips mask at spawn if playing as insectoid or myconid
+			if (stats[player]->playerRace != RACE_INSECTOID && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		// tunic
+		item = newItem(TUNIC, SERVICABLE, 0, 1, 1, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// leather gloves
+		item = newItem(GLOVES, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// boots
+		item = newItem(LEATHER_BOOTS, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if (isLocalPlayer)
+		{
+			// acid
+			item = newItem(POTION_ACID, EXCELLENT, 0, 5, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[2].item = item2->uid;
+			free(item);
+
+			// firestorm
+			item = newItem(POTION_FIRESTORM, EXCELLENT, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[2].item = item2->uid;
+			free(item);
+
+			// healing
+			item = newItem(POTION_HEALING, EXCELLENT, 0, 4, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[8].item = item2->uid;
+			free(item);
+
+			// cure ailment
+			item = newItem(POTION_CUREAILMENT, EXCELLENT, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// confusion
+			item = newItem(POTION_CONFUSION, EXCELLENT, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// invisibilty
+			item = newItem(POTION_INVISIBILITY, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// empty bottles
+			item = newItem(POTION_EMPTY, SERVICABLE, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[8].item = item2->uid;
+			free(item);
+
+			// rations
+			item = newItem(FOOD_RATION_HERBAL, SERVICABLE, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// apple
+			item = newItem(FOOD_APPLE, WORN, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// towel
+			item = newItem(TOOL_TOWEL, SERVICABLE, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// alembic
+			item = newItem(TOOL_ALEMBIC, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[9].item = item2->uid;
+			free(item);
+		}
+		}
+	else if (client_classes[player] == CLASS_EXTERMINATOR)
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if (!isLocalPlayer && multiplayer == CLIENT && intro == false) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		// crossbow
+		item = newItem(CROSSBOW, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// tinkering kit
+		item = newItem(TOOL_TINKERING_KIT, EXCELLENT, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[1].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// cloak
+		item = newItem(CLOAK, SERVICABLE, 0, 1, 1, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// hat
+		item = newItem(HAT_BOUNTYHUNTER, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		// leather armor
+		item = newItem(LEATHER_BREASTPIECE, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// leather boots
+		item = newItem(LEATHER_BOOTS, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if (isLocalPlayer)
+		{
+			// silver arrows
+			item = newItem(QUIVER_SILVER, SERVICABLE, 0, 40, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[3].item = item2->uid;
+			free(item);
+
+			// beartraps
+			item = newItem(TOOL_BEARTRAP, EXCELLENT, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[4].item = item2->uid;
+			free(item);
+
+			// freeze traps
+			item = newItem(TOOL_FREEZE_BOMB, EXCELLENT, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[5].item = item2->uid;
+			free(item);
+
+			// lockpicks
+			/* item = newItem(TOOL_LOCKPICK, EXCELLENT, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[6].item = item2->uid;
+			free(item); */
+
+			// food
+			if (stats[player]->playerRace != RACE_AUTOMATON)
+			{
+				// bread
+				item = newItem(FOOD_BREAD, SERVICABLE, 0, 1, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);
+
+				// tins
+				item = newItem(FOOD_TIN, SERVICABLE, 0, 2, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);
+
+				// tin opener
+				item = newItem(TOOL_TINOPENER, SERVICABLE, 0, 1, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);
+
+				// towel
+				item = newItem(TOOL_TOWEL, SERVICABLE, 0, 1, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);
+			}
+			else
+			{
+				// fire scroll
+				item = newItem(SCROLL_FIRE, SERVICABLE, 0, 1, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);
+			}
+
+			// metal scrap
+			item = newItem(TOOL_METAL_SCRAP, DECREPIT, 0, 12, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// magic scrap
+			item = newItem(TOOL_MAGIC_SCRAP, DECREPIT, 0, 6, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+		}
+	else if (client_classes[player] == CLASS_LOREMASTER)
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if (!isLocalPlayer && multiplayer == CLIENT && intro == false) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		// staff
+		item = newItem(SHILLELAGH_MACE, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// lute
+		item = newItem(INSTRUMENT_LUTE, EXCELLENT, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// hood (green)
+		item = newItem(HAT_HOOD, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		// cloak (green)
+		item = newItem(CLOAK, SERVICABLE, 0, 1, 0, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		// ring of warning
+		item = newItem(RING_WARNING, SERVICABLE, 0, 1, 2, true, nullptr);
+		if (isLocalPlayer)
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if (isLocalPlayer)
+		{
+			// lantern
+			item = newItem(TOOL_LANTERN, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// staff of digging
+			item = newItem(MAGICSTAFF_DIGGING, SERVICABLE, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// spellbook of confuse
+			item = newItem(SPELLBOOK_CONFUSE, WORN, 0, 1, 8, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// spellbook of opening
+			item = newItem(SPELLBOOK_OPENING, WORN, 0, 1, 6, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// feather
+			item = newItem(ENCHANTED_FEATHER, EXCELLENT, 0, 1, ENCHANTED_FEATHER_MAX_DURABILITY - 1, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// summon scroll
+			item = newItem(SCROLL_SUMMON, SERVICABLE, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// magic mapping scroll
+			item = newItem(SCROLL_MAGICMAPPING, SERVICABLE, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// blank scrolls
+			item = newItem(SCROLL_BLANK, SERVICABLE, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// mana potion
+			item = newItem(POTION_RESTOREMAGIC, EXCELLENT, 0, 1, 1, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			// luckstone
+			item = newItem(GEM_LUCK, WORN, 0, 1, 1, false, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+	}
+
 	// start DLC
 	else if ( client_classes[player] == CLASS_CONJURER )
 	{
@@ -2078,12 +3308,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// red cloak
@@ -2102,7 +3340,7 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			// slow book
-			item = newItem(SPELLBOOK_SLOW, WORN, 0, 1, 8, true, nullptr);
+			item = newItem(SPELLBOOK_POISON, DECREPIT, 0, 1, 8, true, nullptr);
 			item2 = itemPickup(player, item);
 			hotbar[9].item = item2->uid;
 			free(item);
@@ -2210,12 +3448,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		// cloak silver
@@ -2248,7 +3494,7 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			// spear
-			item = newItem(IRON_SPEAR, SERVICABLE, curseItems ? -1 : 1, 1, 1, true, nullptr);
+			item = newItem(MAGICSTAFF_COLD, SERVICABLE, 0, 1, 1, true, nullptr);
 			item2 = itemPickup(player, item);
 			hotbar[1].item = item2->uid;
 			free(item);
@@ -2266,10 +3512,10 @@ void initClass(const int player)
 			free(item);
 
 			// cold spellbook
-			item = newItem(SPELLBOOK_COLD, SERVICABLE, 0, 1, 4, true, nullptr);
+			/*item = newItem(SPELLBOOK_COLD, SERVICABLE, 0, 1, 4, true, nullptr);
 			item2 = itemPickup(player, item);
 			hotbar[8].item = item2->uid;
-			free(item);
+			free(item);*/
 
 			// charm monster spellbook
 			item = newItem(SPELLBOOK_CHARM_MONSTER, DECREPIT, 0, 1, 8, true, nullptr);
@@ -2472,7 +3718,7 @@ void initClass(const int player)
 			return;
 		}
 
-		item = newItem(TOOL_WHIP, EXCELLENT, 0, 1, 0, true, nullptr);
+		item = newItem(TOOL_WHIP, WORN, 0, 1, 0, true, nullptr);
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
@@ -2489,12 +3735,20 @@ void initClass(const int player)
 		if ( isLocalPlayer )
 		{
 			item2 = itemPickup(player, item);
-			useItem(item2, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
 			free(item);
 		}
 		else
 		{
-			useItem(item, player);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
 		}
 
 		//// ring slow digestion
@@ -2764,12 +4018,501 @@ void initClass(const int player)
 			free(item);
 		}
 	}
+	else if ( client_classes[player] == CLASS_BARD )
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if ( !isLocalPlayer && multiplayer == CLIENT && intro == false ) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		item = newItem(RAPIER, WORN, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(BANDIT_BREASTPIECE, EXCELLENT, 0, 1, 1, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(HAT_PLUMED_CAP, EXCELLENT, 0, 1, 1, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		item = newItem(LOAFERS, SERVICABLE, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(player % 2 == 0 ? INSTRUMENT_FLUTE : INSTRUMENT_LYRE, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if ( isLocalPlayer )
+		{
+			item = newItem(player % 2 == 1 ? INSTRUMENT_FLUTE : INSTRUMENT_LYRE, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(FOOD_FISH, EXCELLENT, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(POTION_RESTOREMAGIC, EXCELLENT, 0, 1, 1, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+	}
+	else if ( client_classes[player] == CLASS_SAPPER )
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if ( !isLocalPlayer && multiplayer == CLIENT && intro == false ) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		item = newItem(STEEL_FLAIL, SERVICABLE, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(AMULET_BURNINGRESIST, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[0].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(TOOL_FRYING_PAN, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			hotbar[4].item = item2->uid;
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(SHAWL, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(HOOD_TEAL, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		item = newItem(CLEAT_BOOTS, WORN, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(GLOVES, WORN, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(MASK_EYEPATCH, WORN, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if ( isLocalPlayer )
+		{
+			item = newItem(BOLAS, SERVICABLE, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[2].item = item2->uid;
+			free(item);
+
+			item = newItem(TOOL_TOWEL, SERVICABLE, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[5].item = item2->uid;
+			free(item);
+
+			item = newItem(FOOD_MEAT, DECREPIT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(FOOD_BREAD, DECREPIT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+	}
+	else if ( client_classes[player] == CLASS_SCION )
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if ( !isLocalPlayer && multiplayer == CLIENT && intro == false ) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		item = newItem(TOOL_FOCI_DARK_RIFT, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(MAGICSTAFF_SCEPTER, EXCELLENT, 0, 1, 50, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		/*item = newItem(HAT_CIRCLET_WISDOM, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}*/
+
+		item = newItem(QUILTED_BOOTS, WORN, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(ROBE_WIZARD, SERVICABLE, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if ( isLocalPlayer )
+		{
+			item = newItem(FOOD_BREAD, SERVICABLE, 1, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[2].item = item2->uid;
+			free(item);
+
+			item = newItem(POTION_RESTOREMAGIC, SERVICABLE, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			hotbar[5].item = item2->uid;
+			free(item);
+
+			item = newItem(POTION_HEALING, SERVICABLE, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(KEY_SILVER, WORN, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+	}
+	else if ( client_classes[player] == CLASS_HERMIT )
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if ( !isLocalPlayer && multiplayer == CLIENT && intro == false ) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		item = newItem(SHILLELAGH_MACE, WORN, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		Uint32 color = ((uniqueGameKey + player) % MAXPLAYERS);
+		item = newItem(TOOL_DUCK, EXCELLENT, 0, 1, MAXPLAYERS * color + player, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(LEATHER_BOOTS, SERVICABLE, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(CLOAK_PROTECTION, SERVICABLE, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(AMULET_WATERBREATHING, SERVICABLE, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if ( isLocalPlayer )
+		{
+			item = newItem(FOOD_APPLE, SERVICABLE, 0, 3, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(FOOD_MEAT, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(POTION_RESTOREMAGIC, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(POTION_BOOZE, EXCELLENT, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(MASK_PIPE, WORN, 0, 1, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+	}
+	else if ( client_classes[player] == CLASS_PALADIN )
+	{
+		initClassStats(client_classes[player], stats[player]);
+
+		if ( !isLocalPlayer && multiplayer == CLIENT && intro == false ) {
+			// don't do anything crazy with items on players we don't own
+			return;
+		}
+
+		item = newItem(CHAIN_COIF, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item2, player);
+			}
+			free(item);
+		}
+		else
+		{
+			// unequips headgear at spawn if playing as dryad or myconid
+			if (stats[player]->playerRace != RACE_DRYAD && stats[player]->playerRace != RACE_MYCONID)
+			{
+				useItem(item, player);
+			}
+		}
+
+		item = newItem(CHAIN_HAUBERK, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(CLAYMORE_SWORD, SERVICABLE, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		item = newItem(TOOL_FOCI_LIGHT_SANCTUARY, EXCELLENT, 0, 1, 0, true, nullptr);
+		if ( isLocalPlayer )
+		{
+			item2 = itemPickup(player, item);
+			useItem(item2, player);
+			free(item);
+		}
+		else
+		{
+			useItem(item, player);
+		}
+
+		if ( isLocalPlayer )
+		{
+			item = newItem(FOOD_BREAD, SERVICABLE, 0, 2, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+
+			item = newItem(POTION_WATER, EXCELLENT, 4, 4, 0, true, nullptr);
+			item2 = itemPickup(player, item);
+			free(item);
+		}
+	}
 
 	stats[player]->OLDHP = stats[player]->HP;
 
 	if ( stats[player]->stat_appearance == 0 && stats[player]->playerRace == RACE_GOATMAN )
 	{
-		stats[player]->EFFECTS[EFF_ASLEEP] = true;
+		stats[player]->setEffectActive(EFF_ASLEEP, 1);
 		stats[player]->EFFECTS_TIMERS[EFF_ASLEEP] = -1;
 		if ( isLocalPlayer )
 		{
@@ -2781,8 +4524,21 @@ void initClass(const int player)
 	}
 	else
 	{
-		stats[player]->EFFECTS[EFF_ASLEEP] = false;
+		stats[player]->clearEffect(EFF_ASLEEP);
 		stats[player]->EFFECTS_TIMERS[EFF_ASLEEP] = 0;
+	}
+
+	if ( stats[player]->stat_appearance == 0 
+		&& (stats[player]->playerRace == RACE_DRYAD || stats[player]->playerRace == RACE_MYCONID)
+		&& !stats[player]->helmet )
+	{
+		stats[player]->setEffectActive(EFF_GROWTH, 3);
+		stats[player]->EFFECTS_TIMERS[EFF_GROWTH] = -1;
+	}
+	else
+	{
+		stats[player]->clearEffect(EFF_GROWTH);
+		stats[player]->EFFECTS_TIMERS[EFF_GROWTH] = 0;
 	}
 
 	if ( stats[player]->stat_appearance == 0 && stats[player]->playerRace == RACE_AUTOMATON )
@@ -2791,29 +4547,64 @@ void initClass(const int player)
 	}
 
 	if ( stats[player]->stat_appearance == 0 
-		&& client_classes[player] <= CLASS_MONK 
+		&& client_classes[player] <= CLASS_LOREMASTER 
 		&& stats[player]->playerRace != RACE_HUMAN )
 	{
 		if ( isLocalPlayer )
 		{
 			// bonus polymorph potions
-			item = newItem(POTION_POLYMORPH, EXCELLENT, 0, 2, 0, true, nullptr);
-			item2 = itemPickup(player, item);
-			free(item);
+			if ( stats[player]->playerRace == RACE_DRYAD
+				|| stats[player]->playerRace == RACE_MYCONID
+				|| stats[player]->playerRace == RACE_GNOME
+				|| stats[player]->playerRace == RACE_SALAMANDER )
+			{
+				/*item = newItem(POTION_POLYMORPH, EXCELLENT, 0, 1, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);*/
+			}
+			else
+			{
+				item = newItem(POTION_POLYMORPH, EXCELLENT, 0, 2, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);
+			}
 		}
 	}
 	if ( stats[player]->stat_appearance == 0 
-		&& client_classes[player] >= CLASS_CONJURER 
-		&& client_classes[player] <= CLASS_HUNTER 
+		&& (client_classes[player] >= CLASS_CONJURER 
+			&& client_classes[player] <= CLASS_PALADIN)
 		&& stats[player]->playerRace != RACE_HUMAN )
 	{
 		if ( isLocalPlayer )
 		{
-			// bonus polymorph potions
-			item = newItem(POTION_POLYMORPH, EXCELLENT, 0, 3, 0, true, nullptr);
-			item2 = itemPickup(player, item);
-			free(item);
+			if ( stats[player]->playerRace == RACE_DRYAD
+				|| stats[player]->playerRace == RACE_MYCONID
+				|| stats[player]->playerRace == RACE_GNOME
+				|| stats[player]->playerRace == RACE_SALAMANDER )
+			{
+				/*item = newItem(POTION_POLYMORPH, EXCELLENT, 0, 1, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);*/
+			}
+			else
+			{
+				// bonus polymorph potions
+				item = newItem(POTION_POLYMORPH, EXCELLENT, 0, 3, 0, true, nullptr);
+				item2 = itemPickup(player, item);
+				free(item);
+			}
 		}
+	}
+
+	players[player]->mechanics.ducksInARow.clear();
+	if ( client_classes[player] == CLASS_HERMIT )
+	{
+		players[player]->mechanics.ducksInARow.push_back(std::make_pair(((uniqueGameKey + player) % MAXPLAYERS), 0));
+	}
+
+	if ( stats[player]->playerRace == RACE_SALAMANDER && stats[player]->stat_appearance == 0 )
+	{
+		stats[player]->MP = stats[player]->MAXMP / 2;
 	}
 
 	/*if ( svFlags & SV_FLAG_LIFESAVING )
@@ -2870,6 +4661,28 @@ void initClass(const int player)
 		else if ( stats[player]->playerRace == RACE_AUTOMATON && stats[player]->stat_appearance == 0 )
 		{
 			addSpell(SPELL_SALVAGE, player, true);
+		}
+		else if ( stats[player]->playerRace == RACE_DRYAD && stats[player]->stat_appearance == 0 )
+		{
+			addSpell(SPELL_THORNS, player, true);
+			addSpell(SPELL_SHRUB, player, true);
+		}
+		else if ( stats[player]->playerRace == RACE_MYCONID && stats[player]->stat_appearance == 0 )
+		{
+			addSpell(SPELL_SPORES, player, true);
+			addSpell(SPELL_MUSHROOM, player, true);
+		}
+		else if ( stats[player]->playerRace == RACE_GREMLIN && stats[player]->stat_appearance == 0 )
+		{
+			addSpell(SPELL_DEFACE, player, true);
+		}
+		else if ( stats[player]->playerRace == RACE_SALAMANDER && stats[player]->stat_appearance == 0 )
+		{
+			addSpell(SPELL_BREATHE_FIRE, player, true);
+		}
+		else if ( stats[player]->playerRace == RACE_GNOME && stats[player]->stat_appearance == 0 )
+		{
+			addSpell(SPELL_FORGE_JEWEL, player, true);
 		}
 
 		if ( stats[player]->getProficiency(PRO_ALCHEMY) >= 0 )
@@ -2928,6 +4741,51 @@ void initClass(const int player)
 		else if ( client_classes[player] == CLASS_CONJURER )
 		{
 			addSpell(SPELL_SUMMON, player, true);
+		}
+		else if ( client_classes[player] == CLASS_MESMER )
+		{
+			addSpell(SPELL_COMMAND, player, true);
+		}
+		else if ( client_classes[player] == CLASS_BARD )
+		{
+			addSpell(SPELL_ALTER_INSTRUMENT, player, true);
+		}
+		else if ( client_classes[player] == CLASS_SAPPER )
+		{
+			addSpell(SPELL_BOOBY_TRAP, player, true);
+		}
+		else if ( client_classes[player] == CLASS_ARCANIST )
+		{
+			addSpell(SPELL_WINDGATE, player, true);
+		}
+		else if ( client_classes[player] == CLASS_SCION )
+		{
+			addSpell(SPELL_EARTH_ELEMENTAL, player, true);
+			addSpell(SPELL_TELEKINESIS, player, true);
+			addSpell(SPELL_BLESS_FOOD, player, true);
+		}
+		else if ( client_classes[player] == CLASS_HERMIT )
+		{
+			addSpell(SPELL_MAGICIANS_ARMOR, player, true);
+			addSpell(SPELL_PROJECT_SPIRIT, player, true);
+			addSpell(SPELL_DEEP_SHADE, player, true);
+		}
+		else if ( client_classes[player] == CLASS_PALADIN )
+		{
+			addSpell(SPELL_DIVINE_ZEAL, player, true);
+		}
+		else if (client_classes[player] == CLASS_BATTLEMAGE)
+		{
+			addSpell(SPELL_FORCE_SHIELD, player, true);
+		}
+		else if (client_classes[player] == CLASS_NECROKNIGHT)
+		{
+			addSpell(SPELL_DRAIN_SOUL, player, true);
+			addSpell(SPELL_SUMMON, player, true);
+		}
+		else if (client_classes[player] == CLASS_LOREMASTER)
+		{
+			addSpell(SPELL_FORGE_KEY, player, true);
 		}
 
 		//printlog("spell size: %d", list_Size(&spellList));
